@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export function DetailsSection() {
   const containerVariants = {
@@ -70,12 +71,14 @@ export function DetailsSection() {
             </motion.p>
           </div>
 
-          <motion.button 
-            variants={itemVariants}
-            className="group relative overflow-hidden bg-gray-900 text-white px-8 py-3 text-sm tracking-wider uppercase transition-all duration-300 hover:bg-[#6b705c] self-start"
-          >
-            <span className="relative z-10">Know More</span>
-          </motion.button>
+          <motion.div variants={itemVariants} className="self-start">
+            <Link 
+              href="/philosophy"
+              className="group relative overflow-hidden bg-gray-900 text-white px-8 py-3 text-sm tracking-wider uppercase transition-all duration-300 hover:bg-[#6b705c] inline-block"
+            >
+              <span className="relative z-10">Know More</span>
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
 
