@@ -175,4 +175,4 @@ All external images are served from `images.unsplash.com`, which is allowlisted 
 
 ---
 
-*Built for Elysium For You by SONASH PROPERTIES Pvt. Ltd.*
+*Built for Elysium For You by Ishan Ravindra Petkar*
