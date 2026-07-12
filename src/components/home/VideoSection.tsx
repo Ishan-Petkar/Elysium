@@ -8,7 +8,7 @@ export function VideoSection() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="video-preview" className="w-full py-16 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-white">
+    <section id="video-preview" className="w-full py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-white">
       <div className="w-full max-w-[1600px] mx-auto flex flex-col items-center">
         <motion.div
           ref={containerRef}

@@ -40,15 +40,15 @@ export function FaqSection() {
   };
 
   return (
-    <section id="faq" className="w-full py-16 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-white border-t border-gray-100">
+    <section id="faq" className="w-full py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-white border-t border-gray-100">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-8 sm:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-[#383A3C] tracking-wide mb-4 sm:mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-[#383A3C] tracking-wide mb-2 sm:mb-6"
           >
             Frequently Asked Questions
           </motion.h2>

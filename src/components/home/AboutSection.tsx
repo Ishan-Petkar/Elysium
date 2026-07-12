@@ -23,15 +23,15 @@ export function AboutSection() {
   };
 
   return (
-    <section id="about" className="relative w-full min-h-screen landscape:min-h-0 flex flex-col lg:flex-row bg-[#FAFAFA] overflow-hidden">
+    <section id="about" className="relative w-full min-h-screen flex flex-col lg:flex-row bg-[#FAFAFA] overflow-hidden">
       {/* Left Content Area */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center items-start z-10 py-12 landscape:py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:pl-16 xl:pl-24 lg:pr-16 order-2 lg:order-1">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-start z-10 py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:pl-16 xl:pl-24 lg:pr-16 order-2 lg:order-1">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="flex flex-col gap-6 sm:gap-8 max-w-2xl"
+          className="flex flex-col gap-4 sm:gap-8 max-w-2xl"
         >
           <motion.p 
             variants={itemVariants}
@@ -56,7 +56,7 @@ export function AboutSection() {
       </div>
 
       {/* Right Image Area */}
-      <div className="relative w-full lg:w-1/2 min-h-[35vh] landscape:min-h-[30vh] sm:min-h-[50vh] lg:min-h-screen flex items-center justify-center z-10 order-1 lg:order-2">
+      <div className="relative w-full lg:w-1/2 min-h-[40vh] sm:min-h-[50vh] lg:min-h-screen flex items-center justify-center z-10 order-1 lg:order-2">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

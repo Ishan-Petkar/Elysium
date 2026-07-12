@@ -44,12 +44,12 @@ export function Header() {
   return (
     <>
       <header 
-        className="relative w-full h-[70px] landscape:h-[60px] sm:h-[120px] md:h-[140px] z-50 bg-[var(--background)] border-b border-[var(--border)]"
+        className="relative w-full h-[100px] sm:h-[120px] md:h-[140px] z-50 bg-[var(--background)] border-b border-[var(--border)]"
       >
         <div className="w-full h-full pl-0 pr-4 sm:pl-0 sm:pr-6 md:pl-0 md:pr-12 flex items-center justify-between">
           {/* Logo Section */}
           <Link href="#home" className="flex flex-col items-start justify-center group -ml-2 sm:-ml-4 md:-ml-6" onClick={() => setIsMenuOpen(false)}>
-            <div className="relative w-[200px] h-[50px] landscape:w-[180px] landscape:h-[44px] sm:w-[320px] sm:h-[90px] md:w-[480px] md:h-[120px]">
+            <div className="relative w-[260px] h-[75px] sm:w-[320px] sm:h-[90px] md:w-[480px] md:h-[120px]">
               <Image 
                 src="/elysium-logo-ultra.png" 
                 alt="Elysium For You Logo" 
@@ -99,9 +99,9 @@ export function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed top-0 right-0 w-[320px] max-w-[85vw] h-screen bg-[var(--background)] border-l border-[var(--border)] z-50 flex flex-col justify-center px-8 landscape:px-6 shadow-2xl overflow-y-auto"
+              className="fixed top-0 right-0 w-[320px] max-w-[85vw] h-screen bg-[var(--background)] border-l border-[var(--border)] z-50 flex flex-col justify-center px-10 shadow-2xl overflow-y-auto"
             >
-              <nav className="flex flex-col gap-4 landscape:gap-2 max-w-sm mt-12 landscape:mt-6 mb-auto pb-8 landscape:pb-4">
+              <nav className="flex flex-col gap-6 max-w-sm mt-12 mb-auto pb-8">
                 {navLinks.map((link, i) => (
                   <motion.div key={link.name} custom={i} variants={linkVariants}>
                     <Link
@@ -117,7 +117,7 @@ export function Header() {
                         }
                         setIsMenuOpen(false);
                       }}
-                      className="font-serif text-3xl landscape:text-xl text-[var(--muted-foreground)] hover:text-[#6b705c] transition-colors duration-300 font-light tracking-wide"
+                      className="font-serif text-3xl text-[var(--muted-foreground)] hover:text-[#6b705c] transition-colors duration-300 font-light tracking-wide"
                     >
                       {link.name}
                     </Link>

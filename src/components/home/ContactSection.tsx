@@ -53,8 +53,8 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="w-full py-16 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-[var(--background)]">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+    <section id="contact" className="w-full py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-[var(--background)]">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center">
         {/* Left Side: Info */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <motion.div
@@ -63,18 +63,18 @@ export function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
           >
-            <span className="uppercase tracking-[0.3em] text-xs font-semibold text-[var(--accent)] mb-4 sm:mb-6 block">
+            <span className="uppercase tracking-[0.3em] text-xs font-semibold text-[var(--accent)] mb-2 sm:mb-6 block">
               Inquire
             </span>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white tracking-wide mb-6 sm:mb-8 leading-[1.1]">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white tracking-wide mb-4 sm:mb-8 leading-[1.1]">
               Curate Your <br />
               <span className="italic text-[var(--accent)]">Elysium</span> Experience.
             </h2>
-            <p className="text-gray-300 text-lg font-serif leading-relaxed mb-12 max-w-lg">
+            <p className="text-gray-300 text-lg font-serif leading-relaxed mb-8 sm:mb-12 max-w-lg">
               Whether you are looking to acquire a bespoke residence or require expert consultation for your next project, our team is at your disposal. Connect with us to explore the extraordinary.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-[var(--muted)] pt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 border-t border-[var(--muted)] pt-8 sm:pt-12">
               <div>
                 <h4 className="text-xs uppercase tracking-[0.2em] text-[var(--accent)] font-semibold mb-3">Mumbai Office</h4>
                 <p className="text-gray-300 font-serif leading-relaxed text-sm">C Wing, Gajanan Society<br/>Lt. Dilip Gupte Marg, Mahim West<br/>Mumbai 400016</p>
@@ -98,10 +98,10 @@ export function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
-            className="bg-[var(--muted)]/20 p-6 sm:p-10 md:p-14 rounded-2xl border border-[var(--muted)] backdrop-blur-sm"
+            className="bg-[var(--muted)]/20 p-5 sm:p-10 md:p-14 rounded-2xl border border-[var(--muted)] backdrop-blur-sm"
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 sm:space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div className="relative">
                   <Input
                     {...register("firstName")}
@@ -130,7 +130,7 @@ export function ContactSection() {
                 {errors.email && <span className="text-[var(--accent)]/90 italic text-xs mt-1 absolute -bottom-5 left-0">{errors.email.message}</span>}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <Input
                     {...register("phone")}

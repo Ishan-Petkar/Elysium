@@ -23,16 +23,16 @@ const posts = [
 
 export function InstagramSection() {
   return (
-    <section className="w-full py-16 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-[#FAFAFA]">
+    <section className="w-full py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-[#FAFAFA]">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 sm:mb-12 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-6 sm:mb-12 gap-4 sm:gap-6">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-              className="flex items-center gap-3 mb-4"
+              className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-4"
             >
               <IconBrandInstagram className="w-6 h-6 text-[#383A3C]" />
               <span className="uppercase tracking-[0.2em] text-xs font-semibold text-[#383A3C]">
@@ -66,7 +66,7 @@ export function InstagramSection() {
           </motion.div>
         </div>
 
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 sm:gap-6 space-y-4 sm:space-y-6">
+        <div className="columns-1 sm:columns-2 md:columns-3 gap-2 sm:gap-6 space-y-2 sm:space-y-6">
           {posts.map((post, index) => (
             <motion.div
               key={post.id}

@@ -22,15 +22,15 @@ const teamMembers = [
 
 export function TeamsSection() {
   return (
-    <section id="team" className="w-full py-16 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-[#FAFAFA]">
+    <section id="team" className="w-full py-8 sm:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 bg-[#FAFAFA]">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-8 sm:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-[#383A3C] tracking-wide mb-4 sm:mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-[#383A3C] tracking-wide mb-2 sm:mb-6"
           >
             Meet The Directors
           </motion.h2>
@@ -45,7 +45,7 @@ export function TeamsSection() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 md:gap-12 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
@@ -53,7 +53,7 @@ export function TeamsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2, ease: [0.22, 1, 0.36, 1] as const }}
-              className="bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-[#EAEAEA] hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center"
+              className="bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-[#EAEAEA] hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center"
             >
               <h3 className="font-serif text-3xl text-[#383A3C] mb-2">
                 {member.name}

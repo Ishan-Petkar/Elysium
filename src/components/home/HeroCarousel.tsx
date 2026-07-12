@@ -88,7 +88,7 @@ export function HeroCarousel() {
   };
 
   return (
-    <div id="home" className="relative w-full h-[calc(100vh-70px)] landscape:min-h-[280px] landscape:h-[calc(100vh-60px)] sm:h-[calc(100vh-120px)] md:h-[calc(100vh-140px)] overflow-hidden bg-[#1a1a1a] group">
+    <div id="home" className="relative w-full h-[calc(100vh-100px)] sm:h-[calc(100vh-120px)] md:h-[calc(100vh-140px)] overflow-hidden bg-[#1a1a1a] group">
       {/* Embla Viewport */}
       <div className="overflow-hidden w-full h-full" ref={emblaRef}>
         <div className="flex w-full h-full touch-pan-y">
@@ -112,7 +112,7 @@ export function HeroCarousel() {
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
                 {/* Text Content overlay */}
-                <div className="absolute bottom-6 landscape:bottom-4 left-4 sm:left-8 md:bottom-24 md:left-12 lg:left-16 xl:left-24 z-20 flex flex-col items-start w-full max-w-[90vw] md:max-w-4xl pr-4 sm:pr-8">
+                <div className="absolute bottom-12 left-4 sm:left-8 md:bottom-24 md:left-12 lg:left-16 xl:left-24 z-20 flex flex-col items-start w-full max-w-[90vw] md:max-w-4xl pr-4 sm:pr-8">
                   <AnimatePresence mode="wait">
                     {isActive && (
                       <motion.div
@@ -125,7 +125,7 @@ export function HeroCarousel() {
                         <motion.h1
                           custom={0}
                           variants={textVariants}
-                          className="font-serif text-3xl landscape:text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] text-white leading-[1.1] tracking-normal font-light mb-1 landscape:mb-0 drop-shadow-md break-words"
+                          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] text-white leading-[1.1] tracking-normal font-light mb-2 drop-shadow-md break-words"
                         >
                           {slide.title}
                         </motion.h1>
@@ -133,7 +133,7 @@ export function HeroCarousel() {
                         <motion.h2
                           custom={1}
                           variants={textVariants}
-                          className="font-script text-2xl landscape:text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] text-white leading-tight font-bold mb-4 landscape:mb-2 sm:mb-8 drop-shadow-md"
+                          className="font-script text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] text-white leading-tight font-bold mb-6 sm:mb-8 drop-shadow-md"
                         >
                           {slide.subtitle}
                         </motion.h2>

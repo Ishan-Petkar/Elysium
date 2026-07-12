@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* Landscape orientation variant for responsive mobile landscape fixes */
-@custom-variant landscape (@media (orientation: landscape));
-
 :root {
   --background: #16211E;
   --foreground: #ffffff;

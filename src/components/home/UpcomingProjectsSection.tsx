@@ -28,8 +28,8 @@ export function UpcomingProjectsSection() {
   ];
 
   return (
-    <section id="upcoming-projects" className="w-full flex flex-col py-16 sm:py-24 bg-white overflow-hidden">
-      <div className="w-full max-w-[2000px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 mb-12 sm:mb-16">
+    <section id="upcoming-projects" className="w-full flex flex-col py-8 sm:py-24 bg-white overflow-hidden">
+      <div className="w-full max-w-[2000px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 mb-8 sm:mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export function UpcomingProjectsSection() {
         </motion.p>
       </div>
 
-      <div className="relative w-full h-full pb-20">
+      <div className="relative w-full h-full pb-10 sm:pb-20">
         <Carousel slides={slideData} />
       </div>
     </section>
