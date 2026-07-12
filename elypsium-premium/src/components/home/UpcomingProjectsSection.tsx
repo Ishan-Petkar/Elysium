@@ -28,8 +28,8 @@ export function UpcomingProjectsSection() {
   ];
 
   return (
-    <section className="w-full flex flex-col py-24 bg-white overflow-hidden">
-      <div className="w-full max-w-[2000px] mx-auto px-6 md:px-12 lg:px-24 mb-16">
+    <section id="upcoming-projects" className="w-full flex flex-col py-16 sm:py-24 bg-white overflow-hidden">
+      <div className="w-full max-w-[2000px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 mb-12 sm:mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export function UpcomingProjectsSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-gray-500 mt-4 max-w-xl"
         >
-          A glimpse into the future of architectural excellence. Discover our newest concepts currently under development.
+          A glimpse into our exclusive future listings. Discover our newest premium properties currently under development.
         </motion.p>
       </div>
 

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Great_Vibes } from "next/font/google";
-import { AuthProvider } from "@/lib/auth-context";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
@@ -38,13 +37,11 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} ${greatVibes.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)] font-sans">
-        <AuthProvider>
-          <Header />
-          <main className="flex-1 w-full flex flex-col pt-[100px]">
-            {children}
-          </main>
-          <Footer />
-        </AuthProvider>
+        <Header />
+        <main className="flex-1 w-full flex flex-col">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

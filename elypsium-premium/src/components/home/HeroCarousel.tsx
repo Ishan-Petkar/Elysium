@@ -11,26 +11,26 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     id: 2,
-    title: "Skyline Tower",
-    subtitle: "Commercial Architecture",
+    title: "The Apex Tower",
+    subtitle: "Grade-A Commercial Spaces",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
   },
   {
     id: 1,
-    title: "CTS – 01",
-    subtitle: "Residence Architecture",
-    image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80",
-  },
-  {
-    id: 3,
-    title: "Ocean View Villa",
-    subtitle: "Luxury Residential",
+    title: "Elysium Signature Residences",
+    subtitle: "Premium Luxury Living",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80",
   },
   {
+    id: 3,
+    title: "Azure Waterfront",
+    subtitle: "Bespoke Oceanfront Estates",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
+  },
+  {
     id: 4,
-    title: "Urban Courtyard",
-    subtitle: "Interior Design",
+    title: "The Heritage Enclave",
+    subtitle: "Exclusive Private Residences",
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
   },
 ];
@@ -88,7 +88,7 @@ export function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[calc(100vh-100px)] overflow-hidden bg-[#1a1a1a] group">
+    <div id="home" className="relative w-full h-[calc(100vh-100px)] sm:h-[calc(100vh-120px)] md:h-[calc(100vh-140px)] overflow-hidden bg-[#1a1a1a] group">
       {/* Embla Viewport */}
       <div className="overflow-hidden w-full h-full" ref={emblaRef}>
         <div className="flex w-full h-full touch-pan-y">
@@ -112,7 +112,7 @@ export function HeroCarousel() {
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
                 {/* Text Content overlay */}
-                <div className="absolute bottom-12 left-8 md:bottom-24 md:left-12 z-20 flex flex-col items-start w-full max-w-4xl pr-8">
+                <div className="absolute bottom-12 left-4 sm:left-8 md:bottom-24 md:left-12 lg:left-16 xl:left-24 z-20 flex flex-col items-start w-full max-w-[90vw] md:max-w-4xl pr-4 sm:pr-8">
                   <AnimatePresence mode="wait">
                     {isActive && (
                       <motion.div
@@ -125,7 +125,7 @@ export function HeroCarousel() {
                         <motion.h1
                           custom={0}
                           variants={textVariants}
-                          className="font-serif text-[40px] md:text-[60px] lg:text-[90px] text-white leading-none tracking-normal font-light mb-2 drop-shadow-md"
+                          className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] text-white leading-[1.1] tracking-normal font-light mb-2 drop-shadow-md break-words"
                         >
                           {slide.title}
                         </motion.h1>
@@ -133,7 +133,7 @@ export function HeroCarousel() {
                         <motion.h2
                           custom={1}
                           variants={textVariants}
-                          className="font-script text-[36px] md:text-[50px] lg:text-[64px] text-[var(--accent)] leading-tight font-normal mb-8 drop-shadow-md"
+                          className="font-script text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] text-white leading-tight font-bold mb-6 sm:mb-8 drop-shadow-md"
                         >
                           {slide.subtitle}
                         </motion.h2>

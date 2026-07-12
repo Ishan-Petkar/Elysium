@@ -54,30 +54,33 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <a href="#" className="block transition-colors hover:text-primary">
+              <a href="#home" className="block transition-colors hover:text-[#6b705c]">
                 Home
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
-                About Us
+              <a href="#portfolio" className="block transition-colors hover:text-[#6b705c]">
+                Portfolio
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
-                Services
+              <a href="#upcoming-projects" className="block transition-colors hover:text-[#6b705c]">
+                Upcoming Projects
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
-                Products
+              <a href="#team" className="block transition-colors hover:text-[#6b705c]">
+                Our Team
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
+              <a href="#contact" className="block transition-colors hover:text-[#6b705c]">
                 Contact
               </a>
             </nav>
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-            <address className="space-y-2 text-sm not-italic">
-              <p>123 Innovation Street</p>
-              <p>Tech City, TC 12345</p>
-              <p>Phone: (123) 456-7890</p>
-              <p>Email: hello@example.com</p>
+            <address className="space-y-2 text-sm not-italic text-muted-foreground">
+              <p className="font-semibold text-foreground">Mumbai Office</p>
+              <p>C Wing, Gajanan Society, Mahim West, Mumbai 400016</p>
+              <p className="font-semibold text-foreground mt-4">Pune Office</p>
+              <p>Trendy Towers, Amanora Park Town, Hadapsar, Pune 28</p>
+              <p className="mt-4">Phone: +91 83088 37355 | +91 98334 96137</p>
+              <p>Email: contact@elysiumforyou.com</p>
+              <p className="mt-4 font-semibold text-[#6b705c]">MahaRera No: A041262501677</p>
             </address>
           </div>
           <div className="relative">
@@ -140,7 +143,7 @@ function Footerdemo() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 Elysium Studio. All rights reserved.
+            © 2026 Elysium by SONASH PROPERTIES Pvt. Ltd. All rights reserved.
           </p>
           <nav className="flex gap-4 text-sm">
             <a href="#" className="transition-colors hover:text-primary">
