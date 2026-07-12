@@ -82,7 +82,7 @@ export function HeroCarousel() {
       transition: {
         delay: custom * 0.2, // Stagger effect
         duration: 0.8,
-        ease: [0.22, 1, 0.36, 1], // Custom easing for premium feel
+        ease: [0.22, 1, 0.36, 1] as const, // Custom easing for premium feel
       },
     }),
   };
