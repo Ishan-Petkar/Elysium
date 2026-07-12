@@ -29,7 +29,7 @@ export function CategoriesSection() {
         <Link 
           key={category.id}
           href={category.href}
-          className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] group overflow-hidden block rounded-md"
+          className="relative w-full h-[30vh] landscape:h-[45vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] group overflow-hidden block rounded-md"
         >
           {/* Background Image */}
           <div className="absolute inset-0 z-0 transition-transform duration-1000 group-hover:scale-105">

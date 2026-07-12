@@ -23,7 +23,7 @@ export function DetailsSection() {
   };
 
   return (
-    <section id="philosophy" className="relative w-full min-h-screen flex flex-col justify-center bg-white overflow-hidden py-24 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
+    <section id="philosophy" className="relative w-full min-h-screen landscape:min-h-0 flex flex-col justify-center bg-white overflow-hidden py-16 landscape:py-10 sm:py-24 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
       {/* Background Image Container */}
       <div className="absolute inset-y-0 right-0 w-full md:w-[85%] lg:w-[85%] z-0 flex items-center justify-end pr-0 md:pr-4 lg:pr-6">
         <div className="relative w-full h-[90vh] md:h-[110vh]">
@@ -83,7 +83,7 @@ export function DetailsSection() {
       </div>
 
       {/* Bottom Bar Container */}
-      <div className="relative z-20 w-full max-w-[2000px] mx-auto mt-24 flex items-center justify-start pt-8 pl-0 lg:pl-12 xl:pl-24">
+      <div className="relative z-20 w-full max-w-[2000px] mx-auto mt-12 landscape:mt-6 flex items-center justify-start pt-8 pl-0 lg:pl-12 xl:pl-24">
         <motion.p 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
