@@ -38,14 +38,14 @@ export function ContactSection() {
     setSubmitStatus("idle");
 
     try {
-      // Dummy submission since database is removed for now
+      // TODO: Integrate a backend API or email service (e.g. Resend, SendGrid, or a
+      // Next.js API Route) to handle form submissions and forward leads.
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("Lead submitted:", data);
 
       setSubmitStatus("success");
       reset();
     } catch (error) {
-      console.error("Error submitting lead:", error);
+      console.error("Contact form submission error:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
